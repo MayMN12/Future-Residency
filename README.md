@@ -35,7 +35,7 @@ The website contains a comprehensive suite of pages to handle standard customer 
 
 ### 1. Responsive Bootstrap Navigation Bar
 The header features a modern, mobile-friendly navigation system that collapses smoothly into a burger menu on smaller viewports:
-
+```html
 <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
   <div class="container-fluid">
     <a class="navbar-brand" id="website_name" href="#">
@@ -52,7 +52,19 @@ The header features a modern, mobile-friendly navigation system that collapses s
     </div>
   </div>
 </nav>
+```
 
+### 2. Dynamic UI Interactivity
+A native JavaScript utility toggles component text colors dynamically based on user interaction.
+```JavaScript
+function changeColor(x) {
+  if (x.style.color === "gray") {
+    x.style.color = "red";
+  } else if (x.style.color === "red") {
+    x.style.color = "none"; 
+  }
+}
+```
 ---
 
 ## 🚀 How to Run the Project Locally
